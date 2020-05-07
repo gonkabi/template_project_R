@@ -1,6 +1,7 @@
 # template_project_R
-Template for R project
+Template for R project.
 
+# Table of Contents
 <!--ts-->
    * [template_project_R](#template_project_r)
       * [Project Structure](#project-structure)
@@ -13,19 +14,29 @@ Template for R project
 
 <!--te-->
 
-## Project Structure
-x directories and y files contained.  
-* data
+# Project Structure
+Default composition shown following.
+```
+[gonkabi@template_project_R]$ tree -L 2
+.
+├── README.md
+├── data
+│   ├── processed
+│   └── raw
+├── output
+├── report
+└── src
+    └── function
+```
+
+#### data  
+The data directory is where your data gose.  
+This directory has two sub-directory; raw and processed.  
+* raw: store data as basically read-only  
+* processed: store data as disposable  
+
+
 * src
 
-## R Package Version Control
+# R Package Version Control
 renv is a recommend way to control R package version.
-
-## Test
-testtest
-
-## Test
-testtest
-
-## Test
-testtest
