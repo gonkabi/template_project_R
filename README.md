@@ -29,11 +29,11 @@ Default composition shown following.
     └── function
 ```
 
-#### data  
+### data  
 The data directory is where your data gose.  
 This directory has two sub-directory; raw and processed.  
-* raw: store data as basically read-only  
-* processed: store data as disposable  
+-- raw: store data as basically read-only  
+-- processed: store data as disposable  
 
 
 * src
