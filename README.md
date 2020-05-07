@@ -7,8 +7,9 @@ Template for R project
       * [R Package Version Control](#r-package-version-control)
       * [Test](#test)
       * [Test](#test-1)
+      * [Test](#test-2)
 
-<!-- Added by: shota, at: 2020年  5月  5日 火曜日 22:48:12 JST -->
+<!-- Added by: shota, at: 2020年  5月  7日 木曜日 23:38:32 JST -->
 
 <!--te-->
 
@@ -19,6 +20,9 @@ x directories and y files contained.
 
 ## R Package Version Control
 renv is a recommend way to control R package version.
+
+## Test
+testtest
 
 ## Test
 testtest
