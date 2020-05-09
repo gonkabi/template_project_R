@@ -49,7 +49,7 @@ The src direcotry is where your script file goes. A report generate script shoul
 This directory has one sub-directory, function.  
 -- function: store function definition script  
 
-# Manage PATH by here Package  
+# Manage PATH: ```here```  
 The here package helps to avoid using absolute path and using setwd(). It improves a portability of a project.  
 The here() function from the here package build the path when you read or write a file. It creates paths relative to top-level directory.  Top-level directory can be simple as having an empty file named .here.  
 Whenever you work on a project, launch the R process from the project's top-level directory.  
@@ -62,7 +62,7 @@ outPath <- here("output", "data.csv")
 write.table(iris, outPath, sep = ",")
 ```
 
-# Manage Pacakge Version by renv Package  
+# Manage Pacakge: ```renv```  
 The renv package is to bring project-local R dependency management to your projects.  
 Using renv, it's possible to save and load the state of your project library.  
 
