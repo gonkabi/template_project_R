@@ -6,13 +6,13 @@ Template for R project.
    * [template_project_R](#template_project_r)
    * [Table of Contents](#table-of-contents)
    * [Project Structure](#project-structure)
-   * [Manage PATH by here Package](#manage-path-by-here-package)
-   * [Manage Pacakge Version by renv Package](#manage-pacakge-version-by-renv-package)
+   * [Manage PATH: here](#manage-path-here)
+   * [Manage Pacakge: renv](#manage-pacakge-renv)
    * [Make .gitignore](#make-gitignore)
    * [How to Generate TOC for README.md?](#how-to-generate-toc-for-readmemd)
    * [Reference](#reference)
 
-<!-- Added by: shota, at: 2020年  5月  9日 土曜日 17:49:08 JST -->
+<!-- Added by: shota, at: 2020年  5月  9日 土曜日 17:57:39 JST -->
 
 <!--te-->
 
