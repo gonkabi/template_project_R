@@ -4,13 +4,28 @@ Template for R project.
 # Table of Contents
 <!--ts-->
    * [template_project_R](#template_project_r)
-      * [Project Structure](#project-structure)
-      * [R Package Version Control](#r-package-version-control)
-      * [Test](#test)
-      * [Test](#test-1)
-      * [Test](#test-2)
+   * [Table of Contents](#table-of-contents)
+   * [Project Structure](#project-structure)
+         * [data](#data)
+         * [output](#output)
+         * [report](#report)
+         * [src](#src)
+   * [Manage PATH by here Package](#manage-path-by-here-package)
+   * [Manage Pacakge Version by renv Package](#manage-pacakge-version-by-renv-package)
+         * [The general workflow](#the-general-workflow)
+         * [.setup_renv.R](#setup_renvr)
+         * [Tips](#tips)
+   * [Make .gitignore](#make-gitignore)
+   * [How to Generate TOC for README.md?](#how-to-generate-toc-for-readmemd)
+         * [Options](#options)
+   * [Reference](#reference)
+         * [Project Structure](#project-structure-1)
+         * [Package: here](#package-here)
+         * [Package: renv](#package-renv)
+         * [gitignore.io](#gitignoreio)
+         * [gh-md-toc](#gh-md-toc)
 
-<!-- Added by: shota, at: 2020年  5月  7日 木曜日 23:38:32 JST -->
+<!-- Added by: shota, at: 2020年  5月  9日 土曜日 17:21:27 JST -->
 
 <!--te-->
 
@@ -102,6 +117,30 @@ My favorite use:
 1. Just put into a README.md these two line.  
 ```
 <!--ts-->
+   * [template_project_R](#template_project_r)
+   * [Table of Contents](#table-of-contents)
+   * [Project Structure](#project-structure)
+         * [data](#data)
+         * [output](#output)
+         * [report](#report)
+         * [src](#src)
+   * [Manage PATH by here Package](#manage-path-by-here-package)
+   * [Manage Pacakge Version by renv Package](#manage-pacakge-version-by-renv-package)
+         * [The general workflow](#the-general-workflow)
+         * [.setup_renv.R](#setup_renvr)
+         * [Tips](#tips)
+   * [Make .gitignore](#make-gitignore)
+   * [How to Generate TOC for README.md?](#how-to-generate-toc-for-readmemd)
+         * [Options](#options)
+   * [Reference](#reference)
+         * [Project Structure](#project-structure-1)
+         * [Package: here](#package-here)
+         * [Package: renv](#package-renv)
+         * [gitignore.io](#gitignoreio)
+         * [gh-md-toc](#gh-md-toc)
+
+<!-- Added by: shota, at: 2020年  5月  9日 土曜日 17:21:27 JST -->
+
 <!--te-->
 ```
 2. And run.
@@ -113,39 +152,27 @@ gh-md-toc --insert README.md
 ```
 gh-md-toc [--insert] src [src]  Create TOC for a README file (url or local path)
 gh-md-toc [--no-backup] src [src]  Create TOC without backup, requires <!--ts--> / <!--te--> placeholders
-gh-md-toc -                     Create TOC for markdown from STDIN
-gh-md-toc --help                Show help
-gh-md-toc --version             Show version
-gh-md-tco --depth=NUM           Limit depth to generate TOC
-```
+   * [template_project_R](#template_project_r)
+   * [Table of Contents](#table-of-contents)
+   * [Project Structure](#project-structure)
+         * [data](#data)
+         * [output](#output)
+         * [report](#report)
+         * [src](#src)
+   * [Manage PATH by here Package](#manage-path-by-here-package)
+   * [Manage Pacakge Version by renv Package](#manage-pacakge-version-by-renv-package)
+         * [The general workflow](#the-general-workflow)
+         * [.setup_renv.R](#setup_renvr)
+         * [Tips](#tips)
+   * [Make .gitignore](#make-gitignore)
+   * [How to Generate TOC for README.md?](#how-to-generate-toc-for-readmemd)
+         * [Options](#options)
+   * [Reference](#reference)
+         * [Project Structure](#project-structure-1)
+         * [Package: here](#package-here)
+         * [Package: renv](#package-renv)
+         * [gitignore.io](#gitignoreio)
+         * [gh-md-toc](#gh-md-toc)
 
-# Reference
-### Project Structure  
-* Structuring R projects  
-https://www.r-bloggers.com/structuring-r-projects/
-* How to name file  
-https://speakerdeck.com/jennybc/how-to-name-files
+<!-- Added by: shota, at: 2020年  5月  9日 土曜日 17:21:27 JST -->
 
-### Package: here  
-* A simpler way to find your files  
-https://github.com/krlmlr/here
-* What They Forgot to Teach You About R  
-https://rstats.wtf/index.html
-
-### Package: renv  
-* Introduction to renv  
-https://rstudio.github.io/renv/articles/renv.html#comparison-with-packrat
-* renv によるパッケージ管理  
-https://speakerdeck.com/black_tank_top/renv-version-control
-
-### gitignore.io  
-* gitignore.io  
-https://www.gitignore.io/
-* gitignore は、生成サービス gitignore.io を使って作ろう！  
-https://riotz.works/articles/lulzneko/2019/06/18/lets-create-gitignore-using-generation-service-gitignoreio/
-
-### gh-md-toc  
-* Easy TOC creation for GitHub README.md  
-https://github.com/ekalinin/github-markdown-toc#auto-insert-and-update-toc
-* github-markdown-toc.goでMarkdown文書の目次を自動生成  
-https://raimon49.github.io/2017/11/27/generate-toc-for-markdown-document.html
