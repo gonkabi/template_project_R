@@ -88,6 +88,64 @@ Rscript .setup_renv.R
 * When you install a package from Bioconductor, try the following ```renv::install(bioc::PACKAGE_NAME)```. It will try to install the latest version.  
 * If you would like to get older version about a Bioconductor package, try the following ```renv::install(bioc::PACKAGE_NAME@x.x.x)```  
 
-# Make .gitignore
+# Make .gitignore  
+A .gitignore file allows you to specify file/directory that you don't want to puch in git.  
+gitignore.io will greatly help you to create .gitignore file. Let's get the wisdom of ancestors!  
+https://www.gitignore.io/
 
-# How to Make TOC for README.md?
+# How to Generate TOC for README.md?  
+One of the way to generate TOC is using gh-md-toc.  
+It works without any additional software.  
+https://github.com/ekalinin/github-markdown-toc#auto-insert-and-update-toc  
+
+My favorite use:  
+1. Just put into a README.md these two line.  
+```
+<!--ts-->
+<!--te-->
+```
+2. And run.
+```
+gh-md-toc --insert README.md
+```
+
+### Options
+```
+  gh-md-toc [--insert] src [src]  Create TOC for a README file (url or local path)
+  gh-md-toc [--no-backup] src [src]  Create TOC without backup, requires <!--ts--> / <!--te--> placeholders
+  gh-md-toc -                     Create TOC for markdown from STDIN
+  gh-md-toc --help                Show help
+  gh-md-toc --version             Show version
+  gh-md-tco --depth=NUM           Limit depth to generate TOC
+```
+
+# Reference
+### Project Structure  
+* Structuring R projects  
+https://www.r-bloggers.com/structuring-r-projects/
+* What They Forgot to Teach You About R  
+https://rstats.wtf/index.html
+* How to name file  
+https://speakerdeck.com/jennybc/how-to-name-files
+
+### Package: here  
+* A simpler way to find your files  
+https://github.com/krlmlr/here
+
+### Package: renv  
+* Introduction to renv  
+https://rstudio.github.io/renv/articles/renv.html#comparison-with-packrat
+* renv によるパッケージ管理  
+https://speakerdeck.com/black_tank_top/renv-version-control
+
+### gitignore.io  
+* gitignore.io  
+https://www.gitignore.io/
+* gitignore は、生成サービス gitignore.io を使って作ろう！  
+https://riotz.works/articles/lulzneko/2019/06/18/lets-create-gitignore-using-generation-service-gitignoreio/
+
+### gh-md-toc  
+* Easy TOC creation for GitHub README.md  
+https://github.com/ekalinin/github-markdown-toc#auto-insert-and-update-toc
+* github-markdown-toc.goでMarkdown文書の目次を自動生成  
+https://raimon49.github.io/2017/11/27/generate-toc-for-markdown-document.html
