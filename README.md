@@ -7,12 +7,12 @@ Template for R project.
    * [Table of Contents](#table-of-contents)
    * [Project Structure](#project-structure)
    * [Manage PATH: here](#manage-path-here)
-   * [Manage Pacakge: renv](#manage-pacakge-renv)
+   * [Manage Package: renv](#manage-package-renv)
    * [Make .gitignore](#make-gitignore)
    * [How to Generate TOC for README.md?](#how-to-generate-toc-for-readmemd)
    * [Reference](#reference)
 
-<!-- Added by: shota, at: 2020年  5月  9日 土曜日 17:57:39 JST -->
+<!-- Added by: shota, at: 2020年  5月  9日 土曜日 18:03:15 JST -->
 
 <!--te-->
 
@@ -62,7 +62,7 @@ outPath <- here("output", "data.csv")
 write.table(iris, outPath, sep = ",")
 ```
 
-# Manage Pacakge: ```renv```  
+# Manage Package: ```renv```  
 The renv package is to bring project-local R dependency management to your projects.  
 Using renv, it's possible to save and load the state of your project library.  
 
