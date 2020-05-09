@@ -51,7 +51,6 @@ This directory has one sub-directory, function.
 The here package helps to avoid using absolute path and using setwd(). It improves a portability of a project.  
 The here() function from the here package build the path when you read or write a file. It creates paths relative to top-level directory.  Top-level directory can be simple as having an empty file named .here.  
 Whenever you work on a project, launch the R process from the project's top-level directory.  
-https://github.com/krlmlr/here
 
 Example: The "data.csv" file will be saved into data directory
 ```
@@ -73,9 +72,21 @@ Using renv, it's possible to save and load the state of your project library.
 5. Call renv::snapshot() again to save the state of your project library if your attempts to update R packages were successful, or call renv::restore() to revert to the previous state as encoded in the lockfile if your attempts to update packages introduced some new problems.
 
 ### .setup_renv.R  
+This script support users to start using renv.  
+* Update .Rprofile  
+Once you execute renv::init(), the .Rprofile will be created on your working directory. This is differ from the .Rproflie you use usually. This script will reflect your .Rprofile on the newly created file.
+* Install nvimcom to use Nvim-R  
+If you are Nvim-R user, you need to install nvimcom on a project. This script will install nvimcom automatically.
+
+Usage is just to execute it after create renv environment by renv::init().  
+```
+Rscript .setup_renv.R
+```
 
 ### Tips  
-
+* Before you install a package from github by renv::install(), need to execute ```library("devtools")```.  
+* When you install a package from Bioconductor, try the following ```renv::install(bioc::PACKAGE_NAME)```. It will try to install the latest version.  
+* If you would like to get older version about a Bioconductor package, try the following ```renv::install(bioc::PACKAGE_NAME@x.x.x)```  
 
 # Make .gitignore
 
