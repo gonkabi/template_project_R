@@ -111,26 +111,26 @@ gh-md-toc --insert README.md
 
 ### Options
 ```
-  gh-md-toc [--insert] src [src]  Create TOC for a README file (url or local path)
-  gh-md-toc [--no-backup] src [src]  Create TOC without backup, requires <!--ts--> / <!--te--> placeholders
-  gh-md-toc -                     Create TOC for markdown from STDIN
-  gh-md-toc --help                Show help
-  gh-md-toc --version             Show version
-  gh-md-tco --depth=NUM           Limit depth to generate TOC
-```
+gh-md-toc [--insert] src [src]  Create TOC for a README file (url or local path)
+gh-md-toc [--no-backup] src [src]  Create TOC without backup, requires <!--ts--> / <!--te--> placeholders
+gh-md-toc -                     Create TOC for markdown from STDIN
+gh-md-toc --help                Show help
+gh-md-toc --version             Show version
+gh-md-tco --depth=NUM           Limit depth to generate TOC
+`
 
 # Reference
 ### Project Structure  
 * Structuring R projects  
 https://www.r-bloggers.com/structuring-r-projects/
-* What They Forgot to Teach You About R  
-https://rstats.wtf/index.html
 * How to name file  
 https://speakerdeck.com/jennybc/how-to-name-files
 
 ### Package: here  
 * A simpler way to find your files  
 https://github.com/krlmlr/here
+* What They Forgot to Teach You About R  
+https://rstats.wtf/index.html
 
 ### Package: renv  
 * Introduction to renv  
