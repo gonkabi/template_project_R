@@ -117,7 +117,7 @@ gh-md-toc -                     Create TOC for markdown from STDIN
 gh-md-toc --help                Show help
 gh-md-toc --version             Show version
 gh-md-tco --depth=NUM           Limit depth to generate TOC
-`
+```
 
 # Reference
 ### Project Structure  
