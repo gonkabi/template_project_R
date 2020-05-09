@@ -4,13 +4,15 @@ Template for R project.
 # Table of Contents
 <!--ts-->
    * [template_project_R](#template_project_r)
-      * [Project Structure](#project-structure)
-      * [R Package Version Control](#r-package-version-control)
-      * [Test](#test)
-      * [Test](#test-1)
-      * [Test](#test-2)
+   * [Table of Contents](#table-of-contents)
+   * [Project Structure](#project-structure)
+   * [Manage PATH by here Package](#manage-path-by-here-package)
+   * [Manage Pacakge Version by renv Package](#manage-pacakge-version-by-renv-package)
+   * [Make .gitignore](#make-gitignore)
+   * [How to Generate TOC for README.md?](#how-to-generate-toc-for-readmemd)
+   * [Reference](#reference)
 
-<!-- Added by: shota, at: 2020年  5月  7日 木曜日 23:38:32 JST -->
+<!-- Added by: shota, at: 2020年  5月  9日 土曜日 17:49:08 JST -->
 
 <!--te-->
 
@@ -97,27 +99,6 @@ https://www.gitignore.io/
 One of the way to generate TOC is using gh-md-toc.  
 It works without any additional software.  
 https://github.com/ekalinin/github-markdown-toc#auto-insert-and-update-toc  
-
-My favorite use:  
-1. Just put into a README.md these two line.  
-```
-<!--ts-->
-<!--te-->
-```
-2. And run.
-```
-gh-md-toc --insert README.md
-```
-
-### Options
-```
-gh-md-toc [--insert] src [src]  Create TOC for a README file (url or local path)
-gh-md-toc [--no-backup] src [src]  Create TOC without backup, requires <!--ts--> / <!--te--> placeholders
-gh-md-toc -                     Create TOC for markdown from STDIN
-gh-md-toc --help                Show help
-gh-md-toc --version             Show version
-gh-md-tco --depth=NUM           Limit depth to generate TOC
-```
 
 # Reference
 ### Project Structure  
