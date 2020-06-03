@@ -1,0 +1,39 @@
+---
+title: ""
+author:
+    - name: "gonkabi"
+date: "`r format(Sys.Date())`"
+output:
+    rmdformats::readthedown:
+        self_contained: TRUE
+        css: style.css
+---
+
+```{r global_setup, include = FALSE}
+library(here)
+options(scipen = 100)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, cache = TRUE)
+```
+
+```{r r2rmd, cache.e = tools::md5sum(here("src", "template_rnotebook.R"))}
+reportScript <- c("template_rnotebook.R")
+tmp <- here("src", reportScript)
+for (i in seq(tmp)) {
+    knitr::spin(tmp[i], knit = FALSE)
+}
+```
+
+```{r child = "template_rnotebook.Rmd", dependson = "r2rmd"}
+```
+
+# Description
+text
+
+# Analysis Environment
+* System: ngs001
+* Working Directory: `r here()`
+* R sessionInfo():  
+```{r}
+sessionInfo()
+```
+
