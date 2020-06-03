@@ -30,7 +30,7 @@ for (i in seq(tmp)) {
 text
 
 # Analysis Environment
-* System: ngs001
+* System: 
 * Working Directory: `r here()`
 * R sessionInfo():  
 ```{r}
